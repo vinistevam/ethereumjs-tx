@@ -151,7 +151,7 @@ class Transaction {
     if (chainId < 0) chainId = 0
 
     // set chainId
-    this._chainId = chainId || data.chainId || 0
+    this._chainId = opts.chainId || chainId || data.chainId || 0
   }
 
   /**
